@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Mod4Class {
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     double enteredValues[] = new double[5]; //array to hold 5 entered values
     double total = 0;
     double maximum;

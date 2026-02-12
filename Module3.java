@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 
 public class MyClass {
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     double enteredIncome;
     Scanner scnr = new Scanner(System.in);
     double taxRate;
