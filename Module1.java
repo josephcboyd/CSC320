@@ -1,19 +1,19 @@
-public class Person {
-private String first;
-private String last;
-private String address;
+public class Module1 { //declaring attributes for class
+private String firstName;
+private String lastName;
+private String streetAddress;
 private String city;
-private String zip;
+private String zipCode;
     
-    public Person(String first, String last, String address, String city, String zip) {
-        this.first = first;
-        this.last = last;
-        this.address = address;
+    public Person(String firstName, String lastName, String streetAddress, String city, String zipCode) { //construct for person class
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.streetAddress = streetAddress;
         this.city = city;
-        this.zip = zip;
+        this.zipCode = zipCode;
     }
     
-    public void printInfo() { System.out.println(first); System.out.println(last); System.out.println(address); System.out.println(city); System.out.println(zip); } 
+    public void printInfo() { System.out.println(firstName); System.out.println(lastName); System.out.println(streetAddress); System.out.println(city); System.out.println(zipCode); } //printing out info
 
-    public static void main(String[] args) { Person person = new Person("John", "Doe", "123 Main St", "Phoenix", "85001"); person.printInfo(); }
+    public static void main(String[] args) { Person person = new Person("John", "Doe", "123 Main St", "Phoenix", "85001"); person.printInfo(); } //creating a new person
 }
