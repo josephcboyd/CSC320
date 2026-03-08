@@ -173,7 +173,7 @@ class inventory implements Serializable{
         System.out.println("Model Name: " + selected.model_name);        
         System.out.println("Status: " + selected.sale_status);
         
-        System.out.println("\nWhat would you like to update?"); //displays switch options for upcoming switch case. returns here once done with each action to allow for the updating of specific attributes without requiring each one to be updated.
+        System.out.println("\nWhat would you like to update?"); //displays switch options for upcoming switch case. returns here once done with each action to allow for the updating of specific attributes without requiring each one to be 
         System.out.println("1. State");
         System.out.println("2. City");
         System.out.println("3. Zip Code");
@@ -320,6 +320,7 @@ class inventory implements Serializable{
         instance.load();
 
         Scanner scnr = new Scanner(System.in);
+        boolean validInput = false;
 
         while (!validInput) {
             System.out.println("\nWhat would you like to do:");
